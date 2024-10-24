@@ -1,0 +1,124 @@
+:root{
+    --rosaclaro:#FAF0FF;
+    --roxo: #582D99;
+    --rosa: #E1D0E7;
+    --verde: #6DA585;
+    --salmao: #EA9793;
+    --mostarda: #FAAC5A;
+    --vinho: #4A1111;
+    --preto: #09090A;
+}
+
+*{
+    padding: 0;
+}
+body{
+    background-color: var(--rosaclaro);
+    color: var(--roxo);
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0px 100px;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--salmao);
+    background-color: #e4cbc9;
+    border-style: dotted;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+header .LogoNome{
+    display: flex;
+    margin-left: 10px;
+    gap: 30px;
+    align-items: center;
+    margin: 15px ;
+}
+
+header .LogoNome .nome-empresa{
+    display: flex;
+    font-size: 30px;
+}
+
+header .LogoNome .Logotipo{
+    width: 70px;
+}
+
+header nav .menu {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0;
+    margin-right: 40px;
+}
+.menu li a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--salmao);
+    display: flex;
+    align-items: center;
+    }
+
+
+form {
+    width: 300px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    background-color: #fdf8ff; 
+}
+main h1{
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    color: #1f2421;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: var(--verde);
+    background-color: #c7d4cd;
+}
+
+.botao-reset{
+    color: #201d1d;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(126, 59, 51);
+    background-color: #c97d7a;
+}
+#nome:focus, #email:focus, #senha:focus{
+    border-color: var(--verde); 
+    outline: none;
+
+}
+
+#nome, #email, #senha{
+    width: 100%;
+    padding: 2px;
+    border-radius: 5px;
+    border-color: var(--rosa);
+}
+
+@media screen and (max-width: 640px) {
+
+    header{
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--PLACEHOLDER POR ENQUANTO-->
+    <link rel="stylesheet" href="css/cadastro.css">
+    <!-- Icones da Loja e Contato-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Conexão com o google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte Principal -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title> Cadastro Petico Pet</title>
+</head>
+<body>
+    <header>
+
+        <div class="LogoNome">
+        
+            <a class="Logotipo" href="index.html"><img class="Logotipo" src="img/Pitico_PET_logotipo.png" alt="Logo de cachorro do Pitico Pet"></a>
+       
+            <h1 class="nome-empresa">Pitico Pet</h1>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li>   
+                    <a href="loja.html" class="headerli">Loja<span class="material-symbols-outlined">store</span><a>
+
+                </li>
+                <li>
+                    <a href="loja.html" class="headerli">Contato<span class="material-symbols-outlined">call</span></a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header> 
+
+    <main>
+            <h1 id="cadestre">Cadastre-se!</h1>
+         <form>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="SeuEmail@gmail.com">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+            </div>
+
+             <br>
+
+        
+                <input class="botao-reset" type="reset">
+                <input class="botao" type="submit">
+        
+
+
+
+        </form>
+    </main>
+</body>
+</html>
