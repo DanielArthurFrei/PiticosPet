@@ -485,5 +485,6 @@ footer a:hover {
         padding: 10px;
         background-color: var(--roxo);
         background-size: 60%;
-    } 
+        float: none;
+    }
     }
