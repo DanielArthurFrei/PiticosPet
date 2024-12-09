@@ -22,7 +22,158 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!-- Fonte Principal -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            :root{
+    --rosaclaro:#FAF0FF;
+    --roxo: #582D99;
+    --rosa: #E1D0E7;
+    --verde: #6DA585;
+    --salmao: #EA9793;
+    --mostarda: #FAAC5A;
+    --vinho: #4A1111;
+    --preto: #09090A;
+}
+
+body{
+    background-color: var(--rosaclaro);
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.titulomain{
+    font-size: 75px;
+    font-weight: 600;
+}
+.subtitulomain{
+    font-size: 25px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #582D99;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #582D99;
+}
+
+.btn-ver-mais {
+  background-color: #6DA585;
+  color: white;
+}
+
+.btn-ver-mais:hover {
+  background-color: #5A8B72;
+}
+
+footer {
+    background-color: #6DA585;
+    color: #582D99;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer a {
+    color: #582D99;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.onda {
+    z-index: 0;
+    margin-bottom: -1px;
+}
+
+.onda .shape-fill {
+    fill: var(--verde);
+    z-index: 0;
+}
+
+/* Responsividade para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .titulomain{
+        font-size: 50px;
+        font-weight: 600;
+    }
+   
+    .carousel-item .col-md-4 {
+      flex: 0 0 100%; 
+      max-width: 100%;
+      margin-bottom: 20px; 
+    }
+  
+    
+    .carousel-indicators {
+      bottom: -20px;
+    }
+  
+   
+    .card-img-top {
+      max-height: 200px;
+      object-fit: cover; 
+    }
+  
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      transform: translateX(-30%) !important; 
+      font-size: 1.5rem; 
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    
+    header .container {
+        flex-wrap: wrap; 
+        text-align: center; 
+      }
+    
+      header img {
+        width: 40px; 
+        height: 40px;
+      }
+    
+      header h1 {
+        font-size: 1.25rem; 
+      }
+    
+      header form {
+        width: 100%; 
+        margin: 10px 0;
+      }
+    
+      header input {
+        width: 70%; 
+        margin: 0 auto; 
+      }
+    
+      header .d-flex a {
+        font-size: 0.875rem; 
+        margin-bottom: 5px; 
+      }
+    
+      header .d-flex i {
+        font-size: 1rem; 
+      }
+    
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .card-text {
+      font-size: 0.875rem;
+    }
+
+    section {
+      padding: 20px 10px;}
+    }
+
+        </style>
 
 
     <title> Loja Pitico Pet</title>
