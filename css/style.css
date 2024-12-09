@@ -9,332 +9,140 @@
     --preto: #09090A;
 }
 
-*{
-    padding: 0;
-}
 body{
     background-color: var(--rosaclaro);
-    color: var(--roxo);
-    font-size: 25px;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    padding: 0px 100px;
+    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    width: 100%;
 }
 
-.verde:hover {
-    color: #1a7441;
+.titulomain{
+    font-size: 75px;
+    font-weight: 600;
+}
+.subtitulomain{
+    font-size: 25px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #582D99;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #582D99;
+}
+
+.btn-ver-mais {
+  background-color: #6DA585;
+  color: white;
+}
+
+.btn-ver-mais:hover {
+  background-color: #5A8B72;
+}
+
+footer {
+    background-color: #6DA585;
+    color: #582D99;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer a {
+    color: #582D99;
     text-decoration: none;
 }
 
-header{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--salmao);
-    background-color: #e4cbc9;
-    border-style: dotted;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+footer a:hover {
+    text-decoration: underline;
 }
 
-header .LogoNome{
-    display: flex;
-    margin-left: 10px;
-    gap: 30px;
-    align-items: center;
-    margin: 15px ;
+.onda {
+    z-index: 0;
+    margin-bottom: -1px;
 }
 
-header .LogoNome .nome-empresa{
-    display: flex;
-    font-size: 30px;
+.onda .shape-fill {
+    fill: var(--verde);
+    z-index: 0;
 }
 
-header .LogoNome .Logotipo{
-    width: 70px;
-    transition: 0.4s ease;
-}
-
-header .LogoNome .Logotipo:hover{
-    width: 80px;
-    transition: 0.4s ease;
-}
-
-header .Menu.active{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(1, 1, 1, 0.5);
-}
-
-.Menu.active li a {
-    color: var(--salmao);
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-left: 20px;
-    transition: 0.3s ease;
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.Menu.active li a:hover{
-    font-size: 1.6em;
-}
-
-.Menu.active li{
-    background: var(--rosaclaro);
-    width: 400px;
-    max-width: 400px;
-    margin: 10px;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-}
-.MenuLogo{
-    background: url(../img/Menu.png)no-repeat;
-    background-size: 60px;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.MenuLogo:hover{
-    width: 70px;
-    transition: 0.4s ease;
-}
-
-.MenuLogo.active{
-    z-index: 999;
-    background: url(../img/Close.png)no-repeat;
-    background-size: 55px;
-    background-position: center;
-    transition: 0.3s ease-in-out;
-    position: fixed;
-    padding-right: 10%;
-    right: 0;
-}
-
-header nav .Menu{
-    display: none;
-}
+/* Responsividade para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .titulomain{
+        font-size: 50px;
+        font-weight: 600;
+    }
+   
+    .carousel-item .col-md-4 {
+      flex: 0 0 100%; 
+      max-width: 100%;
+      margin-bottom: 20px; 
+    }
+  
     
-
-main.container .imagem{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-main div figure{
-    width: 200px;
-    height: 200px;
-    background-image: url(../img/Pitico_PET_logotipo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.titulo{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 20px;
-}
-
-h1 strong {
-    background-color: var(--rosa);
-    color: var(--roxo);
-    padding: 25px;
-    border-radius: 50%;
-}
-
-.textoPrincipal{
- display: flex;
- align-items: center;
- justify-content: space-between;
- width: 100%;
- font-size: 35px;
-}
-
-.texto1{
-    background-color: var(--mostarda);
-    padding: 20px;
-    border-radius: 35px;
-    color: var(--vinho);
-    margin-right: 100px;
-}
-
-.texto2{
-    background-color: var(--mostarda);
-    padding: 20px;
-    border-radius: 20px;
-    color: var(--vinho);
+    .carousel-indicators {
+      bottom: -20px;
+    }
+  
+   
+    .card-img-top {
+      max-height: 200px;
+      object-fit: cover; 
+    }
+  
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      transform: translateX(-30%) !important; 
+      font-size: 1.5rem; 
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
     
-}
-
-section{
-    margin-top: 50px;
-}
-.deposito{
-    width: 70%;
-    margin: 20px 0 0 0;
-}
-
-figcaption{
-    font-size: 24px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-
-.imgfamilia{
-    margin: 15px;
-    width: 70%;
-}
-
-.familia{
-    margin: 10px;
-    font-size: 34px;
-}
-
-.centro-destribuicao{
-    background-color: var(--color4);
-    color:var(--color2);
-    border-radius: 20px;
-    padding: 20px;
-    width: 50%;
-    margin: 20px;
-}
-
-.diferenciais{
-    background-color: var(--color4);
-    color: var(--color2);
-    border-radius: 30px;
-    width: fit-content;
-    font-size: 30px;
-    margin: auto;
-    padding: 10px 40px;
-}
-p{
-    margin: 20px;
-}
-
-.verde{
-    color: var(--verde);
-}
-
-
-@media screen and (max-width: 640px) {
-    body{
-        padding: 0;
-        font-size: 18px;
-    }
-
-    header{
-        justify-content: center;
-    }
+    header .container {
+        flex-wrap: wrap; 
+        text-align: center; 
+      }
     
-    header .LogoNome{
-        margin-left: 0px;
-        gap: 40px;
-        align-items: center;
-        margin-top: 10px ;
-    }
+      header img {
+        width: 40px; 
+        height: 40px;
+      }
     
-    header .LogoNome .nome-empresa{
-        font-size: 25px;
-    }
+      header h1 {
+        font-size: 1.25rem; 
+      }
     
-    header .LogoNome .Logotipo{
-        width: 70px;
-    }
+      header form {
+        width: 100%; 
+        margin: 10px 0;
+      }
     
-    header nav .Menu {
-        justify-content: space-between;
-        padding: 0;
-        margin-right: 0;
+      header input {
+        width: 70%; 
+        margin: 0 auto; 
+      }
+    
+      header .d-flex a {
+        font-size: 0.875rem; 
+        margin-bottom: 5px; 
+      }
+    
+      header .d-flex i {
+        font-size: 1rem; 
+      }
+    
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .card-text {
+      font-size: 0.875rem;
     }
 
-    header .Menu.active{
-        flex-direction: column;
+    section {
+      padding: 20px 10px;}
     }
-    
-    .Menu.active li a {
-        font-size: 1.3em;
-    }
-    
-    .Menu.active li{
-        width: 200px;
-        max-width: 200px;
-    }
-    
-    .MenuLogo.active{
-        position: fixed;
-        right: 0;
-        padding-right: 10%;
-    }
-
-    .titulo{
-        margin: 0px;
-        font-size: 20px;
-    }
-    
-    h1 strong {
-        padding: 20px;
-    }
-    
-    .textoPrincipal{
-     flex-direction: column;
-     font-size: 20px;
-    }
-
-    .texto1{
-        padding: 5px;
-        margin-right: 0px;
-        margin: 15px;
-    }
-    
-    .texto2{
-        padding: 5px;
-        margin: 15px;
-    }
-
-    section{
-        margin-top: 10px;
-    }
-    
-    figcaption{
-        font-size: 12px;
-    }
-
-    .deposito{
-        width: 70%;
-        margin: 20px 20px 0;
-    }
-
-    .imgfamilia{
-        width: 90%;
-    }
-    
-    .diferenciais{
-        font-size: 18px;
-    }
-    
-}
