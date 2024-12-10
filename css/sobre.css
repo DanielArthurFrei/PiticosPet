@@ -166,13 +166,6 @@ main div figure{
     margin: 10px;
 }
 
-h1 strong {
-    background-color: var(--rosa);
-    color: var(--roxo);
-    padding: 35px;
-    border-radius: 50%;
-}
-
 .textoPrincipal{
     display: flex;
     align-items: center;
@@ -189,6 +182,7 @@ h1 strong {
     border-radius: 35px;
     color: var(--vinho);
     margin-right: 100px;
+    margin-left: 25px;
 }
 
 .texto2{
@@ -196,6 +190,7 @@ h1 strong {
     padding: 20px;
     border-radius: 35px;
     color: var(--vinho);
+    margin-right: 20px;
     
 }
 
@@ -225,7 +220,7 @@ figcaption{
     color:var(--color2);
     border-radius: 25px;
     padding: 10px;
-    width: 50%;
+    width: 100%;
     margin: 20px;
     font-size: 20px;
     display: flex;
@@ -233,10 +228,13 @@ figcaption{
 }
 
 .imgfamilia{
-    margin: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 60px;
+    padding-top: 25px;
     width: 40%;
     display: inline;
-    place-self: center;
     background-color: var(--roxo);
     background-size: 60%;
     border-radius: 25px;
@@ -396,6 +394,10 @@ footer a:hover {
         background-size: 60%;
     }
 
+    .centro-destribuicao{
+        padding: 10px;
+    }
+
     .imgfamilia{
         width: 50%;
         display: block;
@@ -410,6 +412,13 @@ footer a:hover {
         font-size: 18px;
     }
     
+    footer{
+        margin-left: 0px;
+        margin-right: 0px;
+        align-items: center;
+        justify-self: center;
+
+    }
     
 }
 @media screen and (max-width: 576px) {
@@ -471,14 +480,19 @@ footer a:hover {
     .deposito{
         display: block;
         place-self: center;
-        width: 70%;
+        width: 80%;
         border-radius: 20px;
         padding: 10px;
         background-color: var(--roxo);
         background-size: 60%;
     }
+
+    .centro-destribuicao{
+        padding: 10px;
+    }
+
     .imgfamilia{
-        width: 100%;
+        width: 80%;
         display: block;
         place-self: center;
         border-radius: 20px;
@@ -486,5 +500,14 @@ footer a:hover {
         background-color: var(--roxo);
         background-size: 60%;
         float: none;
+        margin-top: 20px;
+    }
+
+    footer{
+        margin-left: 0px;
+        margin-right: 0px;
+        align-items: center;
+        justify-self: center;
+
     }
     }
