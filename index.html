@@ -68,6 +68,17 @@ body{
 .btn-ver-mais:hover {
   background-color: #5A8B72;
 }
+.carousel-item {
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+  }
+
+  .carousel-item img {
+    width: 100%;
+    max-height: 500px; 
+    object-fit: cover; 
+  }
 
 .card-img-top{
     height: auto;
@@ -105,6 +116,9 @@ footer a:hover {
         font-size: 50px;
         font-weight: 600;
     }
+    .carousel-item {
+      height: auto; 
+    }
    
     .carousel-item .col-md-4 {
       flex: 0 0 100%; 
@@ -128,6 +142,11 @@ footer a:hover {
     .carousel-control-next {
       transform: translateX(-30%) !important; 
       font-size: 1.5rem; 
+    }
+
+    .carousel-item img {
+      height: 300px; 
+      object-fit: contain; 
     }
   }
   
@@ -218,7 +237,7 @@ footer a:hover {
     <main>
 
         <section class="py-5">
-            <div class="container">
+            <div style="position: relative;" class="container">
               <h1 class="text-center mb-2 titulomain">Bem-Vindo à Pitico Pet!</h1>
               <h4 class="text-center mb-5">A loja preferida do seu melhor amigo</h4>
               <h2 class="text-center mb-4">Nosso Catálogo de Produtos</h2>
@@ -423,14 +442,17 @@ footer a:hover {
                 </div>
           
                 <!-- Controles -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev" style="transform: translateX(-50%);display: inline-block; color: #582D99; margin-left: 100px; overflow: hidden;">
-                  <span class="carousel-control-prev-icon" style="background-color: #582D99;" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next" style="transform: translateX(50%); color: #582D99; display: inline-block; margin-right: 100px;">
-                  <span class="carousel-control-next-icon" style="background-color: #582D99;" aria-hidden="true"></span>
-                  <span class="visually-hidden">Próximo</span>
-                </button>
+                <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#productCarousel" data-bs-slide="prev" 
+                style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); width: 40px; height: 40px; color: #582D99;">
+                <span class="carousel-control-prev-icon" style="background-color: #582D99;" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#productCarousel" data-bs-slide="next" 
+                style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); width: 40px; height: 40px; color: #582D99;">
+                <span class="carousel-control-next-icon" style="background-color: #582D99;" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+                  
               </div>
             </div>
           </section>
